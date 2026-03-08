@@ -12,10 +12,18 @@
   }
 }
 
-body {
-  /* Set to transparent so the AnimatedBackground behind it is visible */
+/* We set the body and html to be transparent to allow the 
+   AnimatedBackground component to occupy the full viewport 
+   without any blocking background colors.
+*/
+html, body {
   background: transparent !important;
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
+}
+
+/* Ensure the main container doesn't force a background color */
+main {
+  background: transparent !important;
 }
