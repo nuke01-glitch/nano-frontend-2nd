@@ -13,10 +13,9 @@
 }
 
 body {
-  /* CHANGE: Set background to transparent so our animated layer shows through */
-  background: transparent; 
+  /* Set to transparent so the AnimatedBackground behind it is visible */
+  background: transparent !important;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  /* Ensure the body takes up the full screen */
   min-height: 100vh;
 }
